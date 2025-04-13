@@ -13,6 +13,7 @@ import CreateProject from "./pages/CreateProject";
 import Disputes from "./pages/Disputes";
 import NotFound from "./pages/NotFound";
 import Index from "./pages/Index";
+import Auth from "./pages/Auth";
 
 const queryClient = new QueryClient();
 
@@ -24,6 +25,7 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/auth" element={<Auth />} />
           <Route path="/" element={<Layout />}>
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="jobs" element={<Jobs />} />
